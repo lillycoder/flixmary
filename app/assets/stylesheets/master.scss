@@ -13,3 +13,20 @@
   color: white;
 }
 
+.hero {
+  background: image_url('hero1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 370px;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin: 0;
+}
+
+.frosty {
+  background: rgba(0, 0, 0, 0.5);
+  color:  white;
+}
