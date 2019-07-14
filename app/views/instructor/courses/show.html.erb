@@ -2,17 +2,17 @@
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center"><%= current_course.title %></h1>
   <br />
-  <%= link_to 'preview as a student', course_path(current_course), class: 'btn btn-info float-right' %>
+  <%= link_to 'preview as a student', course_path(current_course), class: 'btn btn-danger btn-sm float-right' %>
   <br class="clr" />
   <br />
-  <div class="text-center">
-    <%= link_to 'Add a new section...', new_instructor_course_section_path(current_course), class: 'btn btn-info' %>
+  <div>
+    <%= link_to '+ Section', new_instructor_course_section_path(current_course), class: 'btn btn-info btn-sm float left' %>
   </div>
   <ul>
     <% current_course.sections.each do |section| %>
       <li>
         <%= section.title %>
-        <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'btn btn-info' %>
+        <%= link_to '+ Lesson', new_instructor_section_lesson_path(section), class: 'btn btn-info btn-sm float left' %>
         <ul>
           <% section.lessons.each do |lesson| %>
           <li>
@@ -21,8 +21,12 @@
             <%= lesson.subtitle %>
           </li>
           <% end %>
+          <hr>
         </ul>
       </li>
     <% end %>
   </ul>
  </div>
+ <br class="clr" />
+ <br />
+ <br />

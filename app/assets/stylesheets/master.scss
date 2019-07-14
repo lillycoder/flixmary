@@ -13,6 +13,11 @@
   color: white;
 }
 
+span.navbar-toggler-icon {
+  height: 15px;
+  background-color: #848484;
+}
+
 .hero {
   background: image_url('hero1.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -44,9 +49,6 @@ h1, h2, h3, h4, h5, h6, .navbar {
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 
-.btn {
-  border-radius: 0;
-}
 
 .feature {
   width: 100%;
@@ -84,3 +86,48 @@ body {
 .clr {
   clear: both;
 }
+
+.btn-info {
+        background-color: #01A9DB;
+        color: #464847;
+        border-color: #B2C5BB;
+        border-radius: 10px;
+    }
+
+.btn-info:hover,
+    .btn-info:focus,
+    .btn-info:active    {
+        background-color: #086A87;
+        color: #FFF;
+        border-color: #5D6D64;
+        font-family: "Helvetica Neue", Helvetica, san-serif;
+    }
+
+.btn-info:hover,
+    .btn-info:focus,
+    .btn-info:active    {
+        background-color: #5D6D64;
+        color: #FFF;
+        border-color: #5D6D64;
+        font-family: "Helvetica Neue", Helvetica, san-serif;
+    }
+
+.btn-danger {
+        background-color: #A4A4A4;
+        color: white;
+        border-color: #535454;
+        border-radius: 10px;
+      font-family: "Helvetica Neue", Helvetica, san-serif;
+    }
+    .btn-danger:hover,
+    .btn-danger:focus,
+    .btn-danger:active {
+        background-color: #585858;
+        color: #FFF;
+        border-color: #202121;
+        font-family: "Helvetica Neue", Helvetica, san-serif;
+    }     
+
+  .hr_item {
+    border-width: 2px;
+  }
