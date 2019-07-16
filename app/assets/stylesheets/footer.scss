@@ -1,5 +1,6 @@
 html {
-  height: 100%;
+  min-height: 100%;
+  position: relative;
 
 }
 
@@ -14,10 +15,11 @@ body {
 }
 
 #footer {
-  positon: relative;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   min-height: 100px;
-  background-color: rgba(36, 32, 33, 0.9);
+  background: image_url('bg3.png');
   color: white;
   font-family: "Helvetica Neue", Helvetica;
 }
@@ -28,3 +30,4 @@ body {
   padding: 10px 0px;
   margn-top: 30px;
 }
+

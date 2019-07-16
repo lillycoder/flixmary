@@ -11,6 +11,7 @@
 
   <body>
 <!-- adding the flexbox code -->
+    <div class="pageContentWrapper">
     <div id="flex-content-container">
 
 <!--  beginning of the nav bar code -->
@@ -19,7 +20,7 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-              <a href='#'> Flixmary Application</a>
+              <%= link_to 'Coding Made Easy', root_path, class: 'title' %>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav mr-auto mt-2 mt-md-0">
 
@@ -55,9 +56,11 @@
   <!-- end of the nav bar code -->
       <%= yield %>
     </div>
+  </div>
 
     <div id="footer">
       <div class="container">
+        <br />
         <b>Teachers</b>
         <br />
         <%= link_to 'Teach a Course', new_instructor_course_path %>
