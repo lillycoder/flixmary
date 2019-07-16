@@ -6,8 +6,8 @@
       <%= current_lesson.subtitle %>
   </p>
 
-   <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
-  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+   <video id="my-video" class="video-js vjs-big-play-centered vjs-fluid" controls preload="auto"
+  poster="<%= image_path('black.jpg') %>" data-setup="{}">
     <source src="<%= current_lesson.video.to_s %>" type='video/mp4'>
     
     <noscript>
@@ -19,5 +19,4 @@
     </noscript>
   </video>
 
-  <%= link_to 'Video', current_lesson.video.to_s %>
 </div>
