@@ -8,9 +8,11 @@
     <h2 class="text-center">
       <%= link_to course.title, course_path(course) %>
     </h2>
-        <p> begin of troublesom code </p>
-        <% image_tag course.image %>
-        <p> End of troublesome code </p>
+        <% if course.image.present? %>
+          <p> begin of troublesom code </p>
+          <% image_tag course.image.url %>
+          <p> End of troublesome code </p>
+        <% end %>
     <br />
     <div class="row">
 
