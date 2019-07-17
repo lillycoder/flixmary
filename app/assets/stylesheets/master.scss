@@ -145,3 +145,19 @@ body {
   .title:hover, {
     color: #848484;
   }
+
+  .lesson {
+    background-color: black;
+  }
+
+  .section {
+    border: 1px solid;
+    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+    padding: 30px;
+  }
+
+  .lesson a {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica;
+    font-weight:100;
+  }
