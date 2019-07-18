@@ -23,7 +23,7 @@
       <% if current_user && current_user.enrolled_in?(@course) %>
         <h3 class="badge badge-info">You Are Enrolled!</h3>
       <% else %> 
-        <p> link_to 'Enroll', course_enrollments_path(@couse), class: 'btn btn-info', method: :post</p>
+        <%= link_to 'Enroll', course_enrollments_path(@cousre), class: 'btn btn-info', method: :post %>
       <% end %>
 
     </div>
