@@ -24,13 +24,32 @@
         <h3 class="badge badge-info">You Are Enrolled!</h3>
       <% else %> 
         <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-info', method: :post %>
+        <%= form_tag course_enrollments_path(@course) do %>
+          <article>
+            <% if flash[:error].present? %>
+              <div id="error_explanation">
+                <p><%= flash[:error] %></p>
+              </div>
+            <% end %>
+            <label class="amount">
+              <span>Amount: $5.00</span>
+            </label>
+          </article>
+
+          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                  data-key="<% Rails.configuration.stripe[:publishable_key] %>"
+                  data-description="A month's subscription"
+                  data-amount="500"
+                  data-locale="auto"></script>
+        <% end %>
       <% end %>
 
     </div>
-
+    <div class="col-sm-8 col-12">
       <%= @course.description %>
     </div>
-
+    </div>
+    <div class="col-12">
     
     <% @course.sections.each do |section| %>
       <br /><br />
@@ -57,6 +76,7 @@
         <br class="clr" />
       </div>
      <% end %>
+   </div>
   </div>
 </div>
 <br />
