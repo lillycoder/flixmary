@@ -169,3 +169,37 @@ body {
     font-weight: 100;
     font-size: 25px;
   }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul .header {
+    font-size: 25px;
+  }
+
+  .booyah-box-section {
+  -moz-box-shadow: 4px 4px 8px 0 #d0d0d0;
+  -webkit-box-shadow: 4px 4px 8px 0 #d0d0d0;
+  box-shadow: 4px 4px 8px 0 #d0d0d0;
+  background: #eaeae1;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 10px;
+}
+
+.booyah-box-lesson {
+  -moz-box-shadow: 4px 4px 8px 0 #d0d0d0;
+  -webkit-box-shadow: 4px 4px 8px 0 #d0d0d0;
+  box-shadow: 4px 4px 8px 0 #d0d0d0;
+  background: #8C8A88;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.lessons li b {
+  font-size: 20px;
+  font-weight: 100;
+}
