@@ -47,7 +47,8 @@
     </div>
     <div class="col-12">
     
-    <% @course.sections.each do |section| %>
+    <% @course.sections.rank(:row_order).each do |section| %>
+    
       <br />
       
 
@@ -70,6 +71,7 @@
         <br class="clr" />
       </div>
      <% end %>
+   </p>
    </div>
   </div>
 </div>
