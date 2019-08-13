@@ -2,11 +2,13 @@
 
 <div class="booyah-box col-10 offset-1">
   <h1>What I'm Learning</h1>
+    <br />
+    <br />
     <% current_user.enrolled_courses.each do|course| %>
       <h3 class="text-center">
         <%= link_to course.title, course_path(course) %></h3>
         <br/>
-        <%= course.image %>
+        <%= image_tag course.image.url, class: 'img-fluid' %>
         <!-- put in image_tag before course.image to test and class: 'img-fluid' after -->
         <hr class="hr_item2"/>
         <div class="row">
@@ -24,6 +26,8 @@
     <br />
     <div class="booyah-box col-10 offset-1">
       <h1>What I'm Teaching</h1>
+      <br />
+      <br />
       <% current_user.courses.each do |course| %>
         <h3 class="text-center">
           <%= link_to course.title, course_path(course) %>
