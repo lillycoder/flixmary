@@ -8,7 +8,7 @@
         <br/>
         <%= course.image %>
         <!-- put in image_tag before course.image to test and class: 'img-fluid' after -->
-        <hr />
+        <hr class="hr_item2"/>
         <div class="row">
           <div class="col-12 col-sm-8">
               <%= course.description %>
@@ -17,7 +17,7 @@
               <%= link_to "More Info...", course_path(course), class: 'btn btn-info' %>
           </div>
         </div>
-        <hr class="col-8 offset-2">
+        <hr class="hr_item2">
         <br class="clr" />
       <% end %>
     </div>
@@ -36,7 +36,9 @@
               <%= link_to "More Info...", course_path(course), class: 'btn btn-info' %>
           </div>
         </div>
-        <hr class="col-8 offset-2">
+        <hr class="hr_item2">
         <br class="clr" />
       <% end %>
     </div>
+    <br />
+    <br />
