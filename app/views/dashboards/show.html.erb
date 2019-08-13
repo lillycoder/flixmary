@@ -9,7 +9,6 @@
         <%= link_to course.title, course_path(course) %></h3>
         <br/>
         <%= image_tag course.image.url, class: 'img-fluid' %>
-        <!-- put in image_tag before course.image to test and class: 'img-fluid' after -->
         <hr class="hr_item2"/>
         <div class="row">
           <div class="col-12 col-sm-8">
@@ -34,8 +33,7 @@
         </h3>
         <br />
         <%= image_tag course.image.url, class: 'img-fluid' %>
-        <br />
-        <br />s
+        <hr class="hr_item2" />
         <div class="row">
           <div class="col-12 col-sm-8">
               <%= course.description %>

@@ -51,9 +51,7 @@
     <% current_course.sections.rank(:row_order).each do |section| %>
       <br />
       <li class="booyah-box-section", data-update-url="<%= instructor_section_path(section) %>">
-        <div class="header">
-          <span class="fa fa-ellipsis">here is the section elipse</span>
-          
+        <div class="header">  
           <%= section.title %>
         </div>
           <button type="button" class="btn btn-info btn-sm float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
@@ -75,9 +73,6 @@
                   </p>
                   <p>
                     <%= lesson.subtitle %>
-                  </p>
-                  <p>
-                    <%= link_to 'lesson video', lesson.video.to_s %>
                   </p>
                 </div>
               </div>
