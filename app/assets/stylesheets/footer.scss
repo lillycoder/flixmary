@@ -22,6 +22,7 @@ body {
   background: image_url('bg3.png');
   color: white;
   font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
 }
 
 #footer a {
@@ -29,5 +30,9 @@ body {
   font-weight: 100;
   padding: 10px 0px;
   margn-top: 30px;
+}
+
+.social a:hover {
+  text-decoration: none;
 }
 
