@@ -71,10 +71,13 @@
                 </div>
                 <div class="col-11 text-center">
                   <p>
-                    <b><%= lesson.title %></b>
+                    <b><%= link_to lesson.title, lesson_path %></b>
                   </p>
                   <p>
                     <%= lesson.subtitle %>
+                  </p>
+                  <p>
+                    <%= lesson.video %>
                   </p>
                 </div>
               </div>
