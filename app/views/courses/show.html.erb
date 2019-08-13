@@ -62,7 +62,7 @@
         <div class="row">
             <% section.lessons.rank(:row_order).each do |lesson| %>
               <li>
-                <b><%= link_to lesson.title, lesson_path %></b>
+                <b><%= link_to lesson.title, lesson_path(lesson) %></b>
                     -
                 <%= lesson.subtitle %>
               </li>
