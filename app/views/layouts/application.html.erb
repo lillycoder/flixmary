@@ -53,10 +53,10 @@
             </div>
           </nav>
           <% if notice.present? %>
-            <p class="notice"><%= notice %></p>
+            <p class="alert"><%= notice %></p>
           <% end %>
           <% if alert.present? %>
-            <p class="alert"><%= alert %></p>
+            <ul class="alert"><%= alert %></ul>
           <% end %>
   <!-- end of the nav bar code -->
       <%= yield %>
