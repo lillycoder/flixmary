@@ -6,11 +6,11 @@
       <%= current_lesson.subtitle %>
   </p>
 
-  <% if current_lesson.subtitle %>
-
-    <%= link_to "Next Lesson", lesson_path(current_lesson.next_lesson), class: 'btn btn-info btn-sm float-right' %>
-    Next Lesson &nbsp;
-    <p>add forward icon</p>
+  <% if current_lesson.next_lesson.present? %>
+    <%= link_to lesson_path(current_lesson.next_lesson), class: 'btn btn-default float-right' do %>
+        Next Lesson &nbsp;
+        add icon
+    <% end %>
   <% end %>
 
   <br class="clr" />
